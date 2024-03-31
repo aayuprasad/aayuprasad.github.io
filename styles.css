@@ -1,8 +1,12 @@
 /* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -24,10 +28,20 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #777;
 }
 
 main {
     padding: 20px;
+    margin-bottom: 60px;
+    flex-grow: 1;
 }
 
 footer {
@@ -35,7 +49,54 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+}
+
+/* Style for sections */
+section {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Collapsible button style */
+.collapsible {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
     width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the active state of the button */
+.active, .collapsible:hover {
+    background-color: #777;
+}
+
+/* Style for the collapsible content */
+.content {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 6px solid #555;
+    display: none;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+    }
 }

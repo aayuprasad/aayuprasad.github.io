@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunch Recipes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,72 +18,82 @@
     </header>
 
     <main>
-        <section id="recipeDal">
-            <h2>Dal</h2>
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>1 cup yellow lentils (dal)</li>
-                <li>2 cups water</li>
-                <li>1 onion, chopped</li>
-                <li>2 tomatoes, chopped</li>
-                <li>2 cloves garlic, minced</li>
-                <li>1-inch ginger, grated</li>
-                <li>1 teaspoon turmeric powder</li>
-                <li>1 teaspoon cumin seeds</li>
-                <li>Salt to taste</li>
-                <li>2 tablespoons oil</li>
-            </ul>
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Wash the lentils and soak them in water for 30 minutes.</li>
-                <li>Heat oil in a pressure cooker, add cumin seeds and let them splutter.</li>
-                <li>Add chopped onion, garlic, and ginger. Saute until onions turn golden brown.</li>
-                <li>Add chopped tomatoes, turmeric powder, and salt. Cook until tomatoes are soft.</li>
-                <li>Add soaked lentils and water. Pressure cook for 2-3 whistles.</li>
-                <li>Once pressure releases, open the cooker, and mash the dal lightly. Adjust consistency if required.</li>
-                <li>Serve hot with rice.</li>
-            </ol>
+        <section>
+            <button class="collapsible">Arhar/Toor Dal</button>
+            <div class="content">
+                <h2>Arhar/Toor Dal</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>0.5 cup yellow lentils (dal)</li>
+                    <li>1.5 cups water</li>
+                    <li>0.5 tsp turmeric powder</li>
+                    <li>0.25 tbsp salt</li>
+                    <li>0.25 tbsp cumin seeds</li>
+                    <li>1 tbsp mustard oil/ghee</li>
+                    <li>(Optional) Asafoetida (hing)</li>
+                    <!-- Ingredients for dal -->
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Wash 0.5 cup dal 2-3 times</li>
+                    <li>Add dal to pressure cooker</li>
+                    <li>Add 1.5 water to pressue cooker</li>
+                    <li>Add haldi and salt</li>
+                    <li>Cook for 3-4 whistles on 3 in induction</li>
+                    <li>Add cumin seeds and oil/ghee to tadka pan</li>
+                    <li>When cumin seeds start to crackle, (can also add hing at this point) add the oil-jeera concoction to the pressure cooker and close lid immediately</li>
+                    <!-- Instructions for dal -->
+                </ol>
+            </div>
         </section>
-
-        <section id="recipeRice">
-            <h2>Rice</h2>
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>1 cup basmati rice</li>
-                <li>2 cups water</li>
-                <li>Salt to taste</li>
-            </ul>
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Wash the rice thoroughly until the water runs clear.</li>
-                <li>In a pot, add rice, water, and salt. Bring to a boil.</li>
-                <li>Once boiling, reduce heat to low, cover, and simmer for 15-20 minutes, or until the water is absorbed and rice is cooked.</li>
-                <li>Fluff the rice with a fork and serve hot.</li>
-            </ol>
+        <section>
+            <button class="collapsible">Rice</button>
+            <div class="content">
+                <h2>Rice</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 cup rice</li>
+                    <li>2 cups water</li>
+                    <li>1 tbsp ghee</li>
+                    <!-- Ingredients for rice -->
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Wash 1 cup rice 3 times</li>
+                    <li>Add rice to pressure cooker</li>
+                    <li>Add 2 cups water to pressue cooker</li>
+                    <li>Add 1 tbsp ghee</li>
+                    <li>Cook for 1 whistle on 3 on induction</li>
+                    <!-- Instructions for rice -->
+                </ol>
+            </div>
         </section>
-
-        <section id="recipeAlooBharta">
-            <h2>Aloo Bharta</h2>
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>3 large potatoes, boiled and mashed</li>
-                <li>1 onion, finely chopped</li>
-                <li>2 green chilies, finely chopped</li>
-                <li>1 tablespoon mustard oil</li>
-                <li>1 teaspoon cumin seeds</li>
-                <li>1/2 teaspoon turmeric powder</li>
-                <li>Salt to taste</li>
-                <li>Coriander leaves for garnish</li>
-            </ul>
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Heat mustard oil in a pan, add cumin seeds and let them splutter.</li>
-                <li>Add chopped onion and green chilies. Saute until onions turn translucent.</li>
-                <li>Add turmeric powder and mashed potatoes. Mix well.</li>
-                <li>Cook for 5-7 minutes, stirring occasionally, until potatoes are heated through.</li>
-                <li>Adjust salt to taste.</li>
-                <li>Garnish with chopped coriander leaves and serve hot.</li>
-            </ol>
+        <section>
+            <button class="collapsible">Aloo Bharta</button>
+            <div class="content">
+                <h2>Aloo Bharta</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>2 medium sized aloo</li>
+                    <li>1 medium sized onion</li>
+                    <li>1 green chilli</li>
+                    <li>0.5 tbsp mustard oil</li>
+                    <li>0.25 tbsp salt</li>
+                    <!-- Ingredients for Aloo Bharta -->
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Peel the potatoes</li>
+                    <li>Wash the potatoes</li>
+                    <li>cut potatoes in half</li>
+                    <li>Add potatoes in the pressure cooker when cooking dal</li>
+                    <li>When dal is cooker, i.e. 3-4 whistles, take out the potatoes in a separate bowl</li>
+                    <li>Cut onions and chilli in chopper (small)</li>
+                    <li>Add the oil, cut onions and chilli in the bowl</li>
+                    <li>Mash the potatoes</li>
+                    <!-- Instructions for Aloo Bharta -->
+                </ol>
+            </div>
         </section>
     </main>
 
